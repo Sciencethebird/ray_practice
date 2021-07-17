@@ -9,25 +9,25 @@ OpenAI Gym
 ===
 - [OpenAI official doc](https://gym.openai.com/docs/)
 
-    Basic Structure of Custom Environment
+    Basic Structure of Custom Gym Environment
     ---
     ```python
     class MyCustomEnv(gym.Env):
         def __init__(self, config):
-        
+
             # environment value init....
-    
+
             # observation space definition...
-    
+
         def reset(self) -> "initial observation":
-        
+
             # reset your environment....
-    
+
             return initial_observation
-    
+
         def step(self, action) -> "observation, reward, done, info":
-        
+
             # code for stepping in your environment
-    
+
             return observation, reward, done, info
     ```
